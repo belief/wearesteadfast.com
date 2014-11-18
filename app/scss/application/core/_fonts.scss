@@ -74,3 +74,19 @@
 	src: url(../assets/fonts/PermanentMarker.ttf) format('truetype');
 	font-style: normal;
 }
+
+//black
+
+@font-face {
+	font-family: 'Lato';
+	src: url(../assets/fonts/Lato-Bla.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(../assets/fonts/Lato-BlaIta.ttf) format('truetype');
+	font-style: italic;
+	font-weight: 900;
+}
