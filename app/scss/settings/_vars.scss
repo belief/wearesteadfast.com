@@ -1,0 +1,32 @@
+// Define your breakpoints
+$x-large: new-breakpoint(min-width 1500px);
+$large: new-breakpoint(min-width 1200px);
+$medium-large: new-breakpoint(min-width 1024px);
+$medium: new-breakpoint(min-width 900px);
+$small-medium: new-breakpoint(min-width 684px);
+$small: new-breakpoint(min-width 480px);
+$max-small: new-breakpoint(max-width 480px);
+
+
+//device specific widths
+$tablet: new-breakpoint(max-width 1150px);
+$nav-break: $tablet;
+$small-tablet: new-breakpoint(max-width 780px);
+$mobile: new-breakpoint(max-width 480px);
+$small-mobile: new-breakpoint(max-width 280px);
+
+//define font sizes
+$x-large-font: 36px; 
+$large-font: 30px; 
+$medium-large-font: 20px; 
+$medium-font: 16px;
+$small-font: 14px;
+$x-small-font: 12px;
+$tiny-font: 8px;
+
+//line heights
+$medium-line: 1.7em;
+$small-line: 1.5em;
+
+//speeds
+$trans-speed: .2s;

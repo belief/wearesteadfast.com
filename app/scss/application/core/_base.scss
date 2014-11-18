@@ -1,0 +1,146 @@
+
+* {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: $medium-font;
+    line-height: 1.4;
+}
+
+::-moz-selection,
+::selection {
+    background: $highlight-selection;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    color: $default-text-color;
+    font-family:'Nimbus Sans TW01';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+
+    &.active-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: hidden !important;
+
+        // remove scrollbars just to look cleaner, since body can't scroll when modal is revealed.
+        &::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+        }
+        &::-moz-scrollbar {
+            display: none !important;
+            width: 0 !important;
+        }
+        &:-moz-scrollbar {
+            display: none !important;
+            width: 0 !important;
+        }
+    }
+}
+
+.parallax__layer {
+    position: absolute;
+}
+
+main .wrapper {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+h1 {
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: $x-large-font;
+    font-weight: 200;
+    line-height: 40px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    letter-spacing: 1.5px;
+    color: $default-text-color;
+    margin-bottom: 0;
+    font-size: $large-font;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size:  $medium-font;
+    text-transform: uppercase;
+    font-weight: initial;
+}
+
+h4 {
+    font-size: $small-font;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: $default-text-color;
+    margin: 0;
+}
+
+a {
+    color: $default-active;
+    text-decoration: underline;
+    font-weight: normal;
+    @include transition( all $trans-speed ease-in-out);
+    * {
+        @include transition( all $trans-speed ease-in-out);
+    }
+
+    &:hover {
+        color: $default-hover;
+    }
+}
+
+.ie7 {
+    padding-top: 20px;
+}

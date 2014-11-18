@@ -1,0 +1,29 @@
+.bordered-link {
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	font-family: 'Lato';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	&.green-hover:hover {
+		color: $steadGreen;
+		background-color: #fff;
+	}
+}
+
+.facebook-link,
+.twitter-link,
+.gplus-link,
+.mail-link {
+	height: 30px;
+	width: 30px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.first-half {
+	display: inline-block;
+	width: 47%;
+	margin-right:3%;
+}
+
+.second-half {
+	display: inline-block;
+	width: 47%;
+	float: right;
+	margin-left:3%;
+}
+
+.float-left {
+	text-align: left;
+}
+
+.float-right {
+	text-align: right;
+}
