@@ -11,8 +11,9 @@
 	text-transform: uppercase;
 
 	&.green-hover:hover {
-		color: $steadGreen;
-		background-color: #fff;
+		color: $steadGreen !important;
+		background-color: #fff !important;
+		text-decoration: none !important;
 	}
 }
 
@@ -29,7 +30,8 @@
 	&:hover {
 		background-color: #fff;
 
-		path {
+		svg path,
+		svg polygon {
 			fill: $steadGreen;
 			color: $steadGreen; 
 		}
@@ -63,7 +65,7 @@
 	cursor: pointer;
 
 	&:hover {
-		svg, path {
+		svg * {
 			fill: #fff;
 		}
 	}
