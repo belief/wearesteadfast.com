@@ -19,6 +19,10 @@ body {
 		position: relative;
 		@include calc('width','100% - 120px');
 
+		.teaser {
+			margin-top: 5px;
+		}
+
 		a { 
 			color: #fff;
 			text-decoration: none;
