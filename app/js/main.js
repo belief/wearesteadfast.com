@@ -19,6 +19,7 @@ $(document).ready( function(){
 
 	$('#less-about-edith').on('click', function() {
 		$('.header-info').slideUp();
+			teaserOpened = false;
 	});
 
 	$('#play-btn').on('click', function() {
