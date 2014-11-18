@@ -1,3 +1,7 @@
+//widths
+$innerMax: 1017px;
+$outerMax: 1500px;
+
 // Define your breakpoints
 $x-large: new-breakpoint(min-width 1500px);
 $large: new-breakpoint(min-width 1200px);
@@ -7,6 +11,10 @@ $small-medium: new-breakpoint(min-width 684px);
 $small: new-breakpoint(min-width 480px);
 $max-small: new-breakpoint(max-width 480px);
 
+
+//special
+$outerBreak: new-breakpoint(max-width $outerMax); //outer break
+$innerBreak: new-breakpoint(max-width $innerMax); //inner break
 
 //device specific widths
 $tablet: new-breakpoint(max-width 1150px);

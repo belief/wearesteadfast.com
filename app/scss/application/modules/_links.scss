@@ -22,8 +22,49 @@
 .mail-link {
 	height: 30px;
 	width: 30px;
-	border: 1px solid #fff;
 	text-decoration: none;
 	display: block;
 	cursor: pointer;
+
+	&:hover {
+		background-color: #fff;
+
+		path {
+			fill: $steadGreen;
+			color: $steadGreen; 
+		}
+	}
+}
+
+.play-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	opacity: .8;
+	background: url('../assets/images/playbtn.png');
+	width: 79px;
+	height: 79px;
+	@include transform( translateX(-50%) translateY(-50%));
+	@include transition( all $trans-speed ease-in-out);
+	cursor: pointer;
+
+	&:hover {
+		opacity: .5;
+	}
+}
+
+.facebook-round-link,
+.twitter-round-link,
+.youtube-round-link {
+	height: 30px;
+	width: 30px;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+
+	&:hover {
+		svg, path {
+			fill: #fff;
+		}
+	}
 }
