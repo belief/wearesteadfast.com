@@ -18,3 +18,16 @@
 .float-right {
 	text-align: right;
 }
+
+.first-one-third {
+	display: inline-block;
+	width:30%;
+	margin-right: 3%;
+}
+
+.second-two-third {
+	display: inline-block;
+	width:63%;
+	margin-left: 3%;
+	float: right;
+}

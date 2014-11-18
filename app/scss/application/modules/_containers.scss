@@ -189,6 +189,12 @@ body {
 	}
 }
 
+.separator {
+	border-bottom: 1px solid #fff;
+	margin-top: 25px;
+	margin-bottom: 45px;
+}
+
 .large-font {
 	margin: 100px 0;
 	font-size: 93px;
@@ -229,6 +235,12 @@ p {
 			font-weight: 700;
 		}
 
+		ul li {
+			margin-bottom: 20px;
 
+			.bordered-link {
+				font-size: 18px;
+			}
+		}
 	}
 }
