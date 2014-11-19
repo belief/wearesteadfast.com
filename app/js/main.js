@@ -7,6 +7,7 @@ var popupwindow = function(url,name,height,width) {
 $(document).ready( function(){
 	var teaserOpened = false;
 
+
 	$('#more-about-edith').on('click',function(){
 		if (teaserOpened) {
 			$('.header-info').slideUp();
@@ -23,6 +24,10 @@ $(document).ready( function(){
 	});
 
 	$('#play-btn').on('click', function() {
+		var vimeoiFrame = $('#video')[0],
+			player = Froogaloop(vimeoiFrame);
+		player.api('play');
+
 		$('.play-btn-wrapper').css('display','none');
 		$('.video-wrapper').fadeIn();
 		$('.main-content').animate({
